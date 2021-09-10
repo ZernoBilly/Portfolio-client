@@ -1,14 +1,17 @@
 import React from "react";
+import NavBar from "../components/NavBar/NavBar";
 
-import { StyledContainer } from "../components/Container/StyledContainer";
-import { StyledSection } from "../components/Section/StyledSection";
+import { StyledContainer } from "../components/styled/StyledContainer/StyledContainer";
+import { StyledSection } from "../components/styled/StyledSection/StyledSection";
+import Title from "../components/Title/Title";
+import TechStack from "../components/TechStack/TechStack";
 
 const Home = () => {
   return (
     <StyledContainer>
-      <StyledSection backgroundColor="red">Eka</StyledSection>
-      <StyledSection backgroundColor="blue">Toka</StyledSection>
-      <StyledSection backgroundColor="green">Kolmas</StyledSection>
+      <Title />
+      <StyledSection backgroundColor="blue"></StyledSection>
+      <TechStack />
       <StyledSection backgroundColor="white">Neljäs</StyledSection>
     </StyledContainer>
   );
