@@ -7,4 +7,5 @@ export const StyledSection = styled.section`
   background-color: ${(props) => props.backgroundColor};
   scroll-snap-align: start;
   position: relative;
+  overflow: hidden;
 `;

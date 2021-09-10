@@ -1,5 +1,19 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import Button from "../../Button/Button";
+import theme from "../../../theme/theme";
+
+const scrollBorderAnimation = keyframes`
+from {
+  width: 70px;
+  height: 70px;
+  border-color: ${theme.palette.optional.main};
+}
+to {
+  width: 55px;
+  height: 55px;
+  border-color: ${theme.palette.highlight.light};
+}
+`;
 
 export const ButtonContainer = styled.div`
   position: relative;
@@ -53,6 +67,11 @@ export const StyledButton = styled(Button)`
   border-color: ${(props) => props.theme.palette.highlight.main};
   transition: 0.2s;
   cursor: pointer;
+
+  &:hover {
+    background-color: ${(props) => props.theme.palette.highlight.dark};
+    color: ${(props) => props.theme.palette.optional.main};
+  }
 `;
 
 export const ButtonTitle = styled.h3`
@@ -66,4 +85,34 @@ export const ButtonDescription = styled.p`
   font-size: 1.1rem;
   margin: 0 1rem 0 1rem;
   font-family: ${(props) => props.theme.fontFamily.secondary};
+`;
+
+export const ScrollButtonContainer = styled.div`
+  position: absolute;
+  bottom: 0;
+  height: 8rem;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const ScrollIconBorder = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  border: 5px solid #32557f;
+  border-top: none;
+  border-bottom: none;
+  border-radius: 50px/80px;
+  border-color: ${(props) => props.theme.palette.optional.main};
+
+  &:hover {
+    animation: ${scrollBorderAnimation} 1s forwards;
+  }
+  &:active {
+    border-color: ${(props) => props.theme.palette.highlight.main};
+  }
 `;

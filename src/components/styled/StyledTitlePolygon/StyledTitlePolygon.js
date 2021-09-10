@@ -13,12 +13,11 @@ to {
 `;
 
 export const StyledTitlePolygon = styled.div`
-  height: 100vh;
-  width: 100vw;
-  overflow: auto;
+  height: 100%;
+  width: 100%;
+
   background-color: ${(props) => props.theme.palette.optional.main};
   clip-path: polygon(37% 0, 100% 0, 100% 31%, 42% 100%, 0 100%, 0 35%);
-
   z-index: -1;
   background-image: url(${bgImage});
   background-size: cover;

@@ -27,6 +27,7 @@ export const HeaderText = styled.h1`
   margin: 0;
   padding: 0;
   color: ${(props) => props.color};
+  cursor: default;
 
   @media ${({ theme }) => theme.mediaQueries.sm} {
     font-size: 4rem;
@@ -49,8 +50,9 @@ export const HeaderSecondaryText = styled.h3`
   font-size: 4rem;
   font-family: ${(props) => props.theme.fontFamily.primary};
   color: ${(props) => props.color};
+  cursor: default;
 
   @media ${({ theme }) => theme.mediaQueries.sm} {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 `;

@@ -10,6 +10,7 @@ import {
   SecondaryTitleHeader,
   HeaderSecondaryText,
 } from "../styled/StyledTitleHeader/StyledTitleHeader";
+import ScrollButton from "../ScrollButton/ScrollButton";
 
 const Title = () => {
   return (
@@ -23,7 +24,7 @@ const Title = () => {
         </StyledTitleHeader>
         <SecondaryTitleHeader
           top="425px"
-          right="380px"
+          right="382px"
           smTop="450px"
           smRight="30px"
         >
@@ -42,6 +43,7 @@ const Title = () => {
           Profile Page
         </HeaderSecondaryText>
       </SecondaryTitleHeader>
+      <ScrollButton />
     </StyledSection>
   );
 };
