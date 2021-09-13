@@ -7,7 +7,7 @@ import theme from "../../theme/theme";
 
 const TechStack = () => {
   return (
-    <StyledSection backgroundColor={theme.palette.primary.main}>
+    <StyledSection backgroundColor={theme.palette.primary.main} id="techStack">
       <Grid container>Haloo</Grid>
       <Grid
         container

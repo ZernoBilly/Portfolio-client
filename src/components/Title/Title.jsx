@@ -14,17 +14,17 @@ import ScrollButton from "../ScrollButton/ScrollButton";
 
 const Title = () => {
   return (
-    <StyledSection backgroundColor={theme.palette.primary.main}>
-      <StyledTitleHeader top="40px" left="60px">
+    <StyledSection backgroundColor={theme.palette.primary.main} id="home">
+      <StyledTitleHeader top="40px" left="80px">
         <HeaderText color={theme.palette.text.main}>Welcome</HeaderText>
       </StyledTitleHeader>
       <StyledTitlePolygon>
-        <StyledTitleHeader top="50px" left="37px" moveTitle="60px">
+        <StyledTitleHeader top="50px" left="37px" moveTitle="80px">
           <HeaderText color={theme.palette.secondary.main}>Welcome</HeaderText>
         </StyledTitleHeader>
         <SecondaryTitleHeader
           top="425px"
-          right="382px"
+          right="372px"
           smTop="450px"
           smRight="30px"
         >
@@ -35,7 +35,7 @@ const Title = () => {
       </StyledTitlePolygon>
       <SecondaryTitleHeader
         top="450px"
-        right="310px"
+        right="300px"
         smTop="465px"
         smRight="20px"
       >

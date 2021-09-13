@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledSection = styled.section`
+export const StyledSection = styled.div`
   margin: 0;
   padding: 0;
   height: 100vh;

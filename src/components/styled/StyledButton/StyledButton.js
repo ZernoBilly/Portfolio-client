@@ -4,14 +4,14 @@ import theme from "../../../theme/theme";
 
 const scrollBorderAnimation = keyframes`
 from {
-  width: 70px;
-  height: 70px;
-  border-color: ${theme.palette.optional.main};
+  width: 60px;
+  height: 60px;
+  border-color: ${theme.palette.highlight.main};
 }
 to {
-  width: 55px;
-  height: 55px;
-  border-color: ${theme.palette.highlight.light};
+  width: 53px;
+  height: 53px;
+  border-color: ${theme.palette.highlight.dark};
 }
 `;
 
@@ -101,18 +101,18 @@ export const ScrollIconBorder = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
   border: 5px solid #32557f;
   border-top: none;
   border-bottom: none;
   border-radius: 50px/80px;
-  border-color: ${(props) => props.theme.palette.optional.main};
+  border-color: ${(props) => props.theme.palette.highlight.main};
 
   &:hover {
-    animation: ${scrollBorderAnimation} 1s forwards;
+    animation: ${scrollBorderAnimation} 0.3s forwards;
   }
   &:active {
-    border-color: ${(props) => props.theme.palette.highlight.main};
+    animation: ${scrollBorderAnimation} 1s backwards;
   }
 `;

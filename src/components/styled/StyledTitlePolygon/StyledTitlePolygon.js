@@ -25,4 +25,8 @@ export const StyledTitlePolygon = styled.div`
   background-blend-mode: soft-light;
 
   animation: ${changeBlendMode} 5s alternate infinite;
+
+  @media ${({ theme }) => theme.mediaQueries.sm} {
+    background-position: 20% 50%;
+  }
 `;
